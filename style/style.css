@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'Raleway';
+}
+
+header img{
+    width: 100px;
+}
+
+.search img{
+    width: 18px;
+}
+
+.filter img{
+    width: 18px;
+}
+
+.home-location img{
+    width: 246px;
+}
+
+.popular img{
+    width: 24px;
+}
+
+.popular article img{
+    width: 128px;
+}
+
+.large img, .small img{
+    width: 302px;
+}
+
+
+@media screen and (max-width: 480px){
+    /* Pour mobiles */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
