@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title>Reservia</title>
         <meta charset="utf-8">
@@ -12,189 +12,293 @@
             <img src="images/logo/Reservia@3x.png" alt="logo de reservia">
 
             <nav>
-                <a href="#">Hébergements</a>
-                <a href="#">Activité</a>
-                <a href="#">S'inscrire</a>
+                <a href="#hébergements">Hébergements</a>
+                <a href="#activités">Activité</a>
+                <a href="#"><strong>S'inscrire</strong></a>
             </nav>
         </header>
 
-        <section>
+        <section class="heading">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <div class="search">
                 <img src="images/pictos/map-marker-alt.svg" alt="Tapez le nom de la ville dans laquelle vous cherchez un hébergement">
-                <form action="" method="POST">
+                <form action="action.php" method="POST">
                     <input type="search" name="search" id="search-location" placeholder="Marseille, France">
+                    <input type="submit" value="Rechercher">
                 </form>
-
-                <button>Rechercher</button>
-                
             </div>
 
             <div class="filter">
-                <p>Filtres</p>
+                <p class="filter-title">Filtres</p>
 
-                <div class="filter-price">
+                <div class="filter-value">
                     <img src="images/pictos/money-bill-wave.svg" alt="Filtrer les logements par prix bas">
                     <p>Économique</p>
                 </div>
 
-                <div class="filter-family">
+                <div class="filter-value">
                     <img src="images/pictos/child.svg" alt="Filtrer les logements pour famille">
                     <p>Familial</p>
                 </div>
 
-                <div class="filter-love">
+                <div class="filter-value">
                     <img src="images/pictos/heart.svg" alt="Filtrer les logements pour couples">
                     <p>Romantique</p>
                 </div>
 
-                <div class="filter-pet">
+                <div class="filter-value">
                     <img src="images/pictos/dog.svg" alt="Filtrer les logements autorisant les animaux domestiques">
                     <p>Animaux autorisés</p>
                 </div> 
             </div>
 
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="infos">
+                <img src="images/pictos/info.svg" alt="Informations">
+                <p>Plus de 500 logements sont disponibles dans cette ville</p> 
+            </div>
         </section>
 
-        <section>
+        <section class="home">
             <div class="home-location">
-                <h2>Hébergements à Marseille</h2>
+                <div class="home-title" id="hébergements">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
+                
 
-                <article>
-                    <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hébergement à marseille, Auberge la cannebière">
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hébergement à marseille, Auberge la cannebière">
+                        <div class=home-container>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>
+                </a>                    
+                    
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hébergement à marseille, Hôtel du port">
+                        <div class=home-container>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>    
+                </a>
 
-                    <h3>Auberge la Cannebière</h3>
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hébergement à marseille, Hôtel les mouettes">
+                        <div class=home-container>
+                            <h3>Hôtel les mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>  
+                </a>
 
-                    <p>Nuit à partir de 25€</p>
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hébergement à marseille, Hôtel de la mer">
+                        <div class=home-container>
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>
+                </a>
 
-                    <div class="rating"></div>
-                </article>
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Hébergement à marseille, Auberge Le Panier">
+                        <div class="home-container">
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div> 
+                    </article>
+                </a>
 
-                <article>
-                    <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hébergement à marseille, Hôtel du port">
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hébergement à marseille, Hôtel chez Amina">
+    
+                        <div class="home-container">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="rating"><img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star.svg" alt="note 5/5">
+                            </div>
+                        </div> 
+                    </article>
+                </a>
 
-                    <h3>Hôtel du port</h3>
-
-                    <p>Nuit à partir de 52€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <article>
-                    <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hébergement à marseille, Hôtel les mouettes">
-
-                    <h3>Hôtel les mouettes</h3>
-
-                    <p>Nuit à partir de 76€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <article>
-                    <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hébergement à marseille, Hôtel de la mer">
-
-                    <h3>Hôtel de la mer</h3>
-
-                    <p>Nuit à partir de 46€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <article>
-                    <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Hébergement à marseille, Auberge Le Panier">
-
-                    <h3>Auberge Le Panier</h3>
-
-                    <p>Nuit à partir de 23€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <article>
-                    <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hébergement à marseille, Hôtel chez Amina">
-
-                    <h3>Hôtel chez Amina</h3>
-
-                    <p>Nuit à partir de 96€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <a href="#">Afficher plus</a>
+                <a href="#" class="more">Afficher plus</a>
             </div>
 
             <div class="popular">
-                <h2>Les plus populaires</h2>
-                
-                <img src="images/pictos/chart-line.svg" alt="Sélection des logements les plus populaires de Marseille">
+                <div class="popular-title">
+                    <h2>Les plus populaires</h2>
+                    <img src="images/pictos/chart-line.svg" alt="Sélection des logements les plus populaires de Marseille">
+                </div>
 
-                <article>
-                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Hôtel Le soleil du matin">
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Hôtel Le soleil du matin">
+                        <div class="popular-container">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de 128€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>
+                </a>
 
-                    <h3>Hôtel Le soleil du matin</h3>
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Au coeur de l'eau chambres d'hôtes">
+                        <div class="popular-container">
+                            <h3>Au coeur de l'eau chambres d'hôtes</h3>
+                            <p>Nuit à partir de 71€</p>
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div>
+                    </article>
+                </a>
 
-                    <p>Nuit à partir de 128€</p>
-
-                    <div class="rating"></div>
-                </article>
-                
-                <article>
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Au coeur de l'eau chambres d'hôtes">
-
-                    <h3>Au coeur de l'eau chambres d'hôtes</h3>
-
-                    <p>Nuit à partir de 71€</p>
-
-                    <div class="rating"></div>
-                </article>
-
-                <article>
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Hôtel Tout bleu et Blanc">
-
-                    <h3>Hôtel Tout bleu et Blanc</h3>
-
-                    <p>Nuit à partir de 68€</p>
-
-                    <div class="rating"></div>
-                </article>
-
+                <a href="#">
+                    <article>
+                        <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hébergement les plus populaires à marseille, Hôtel Tout bleu et Blanc">
+                        <div class="popular-container">
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+    
+                            <p>Nuit à partir de 68€</p>
+    
+                            <div class="rating">
+                                <img src="images/pictos/star.svg" alt="note 1/5">
+                                <img src="images/pictos/star.svg" alt="note 2/5">
+                                <img src="images/pictos/star.svg" alt="note 3/5">
+                                <img src="images/pictos/star.svg" alt="note 4/5">
+                                <img src="images/pictos/star-grey.svg" alt="note 5/5">
+                            </div>
+                        </div>  
+                    </article>
+                </a>
             </div>
         </section>
 
-        <section>
-            <h2>Activités à Marseille</h2>
+        <section class="activity">
+            <div class="activity-title" id="activités">
+                <h2>Activités à Marseille</h2>
+            </div>
+            <div class="large">
+                <a href="#">
+                    <div class="card-large">
+                        <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activités à Marseille, Vieux Port">
+                        <section class="card-container">
+                            <h3>Vieux Port</h3>
+                        </section>
+                    </div>
+                </a>
+                
+            </div>
 
-            <article class="large">
-                <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activités à Marseille, Vieux Port">
-                <h3>Vieux Port</h3>
-            </article>
+            <div class="small">
+                <a href="#">
+                    <div class="card-small">
+                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités à Marseille, Fort de Pomèues">
+                        <section class="card-container">
+                            <h3>Fort de Pomèues</h3>
+                        </section>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="card-small">
+                        <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités à Marseille, Îles du Frioul">
+                        <section class="card-container">
+                            <h3>Îles du Frioul</h3>
+                        </section>
+                    </div>
+                </a>
+            </div>
 
-            <article class="small">
-                <img src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités à Marseille, Fort de Pomèues">
-                <h3>Fort de Pomèues</h3>
-            </article>
+            <div class="large">
+                <a href="#">
+                    <div class="card-large">
+                        <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activités à Marseille, Parc National des Calanques">
+                        <section class="card-container">
+                            <h3>Parc National des Calanques</h3>
+                        </section>
+                    </div>
+                </a>
+                
+            </div>
 
-            <article class="small">
-                <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités à Marseille, Îles du Frioul">
-                <h3>Îles du Frioul</h3>
-            </article>
+            <div class="small">
+                <a href="#">
+                    <div class="card-small">
+                        <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activités à Marseille, Notre-Dame-de-la-Garde">
+                        <section class="card-container">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </section>
+                    </div>
+                </a>
 
-            <article class="large">
-                <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activités à Marseille, Parc National des Calanques">
-                <h3>Parc National des Calanques</h3>
-            </article>
-
-            <article class="small">
-                <img src="images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activités à Marseille, Notre-Dame-de-la-Garde">
-                <h3>Notre-Dame-de-la-Garde</h3>
-            </article>
-            
-            <article class="small">
-                <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activités à Marseille, Parc Lonchamp">
-                <h3>Parc Lonchamp</h3>
-            </article>
+                <a href="#">
+                    <div class="card-small">
+                        <img src="images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activités à Marseille, Parc Lonchamp">
+                        <section class="card-container">
+                            <h3>Parc Lonchamp</h3>
+                        </section>
+                    </div>
+                </a>
+            </div>  
         </section>
 
         <footer>
