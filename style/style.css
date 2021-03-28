@@ -346,6 +346,10 @@ input[type="submit"]:hover{
     margin: 2% 0 1% 1%;
 }
 
+.activity h3, .home-location h3, .popular-container h3{
+    color: black;
+}
+
 .card-large:hover, .card-small:hover{
     transform: scale(1.05);
 }
