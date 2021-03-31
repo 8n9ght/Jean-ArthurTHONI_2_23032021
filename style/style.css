@@ -29,7 +29,7 @@ p, a{
     font-size: 18px;
 }
 
-h2, h3, h4, nav a:last-child{
+h2, h3, h4, .signup a{
     font-family: 'Raleway Bold';
 }
 
@@ -45,8 +45,13 @@ h4{
     font-size: 20px;
 }
 
-header img{
-    width: 100px;
+.logo{
+    margin: 0 0 0 2%;
+    width: 80%;
+}
+
+.logo img{
+    width: 15%;
 }
 
 a{
@@ -83,37 +88,48 @@ header{
     height: 100px;
 }
 
-header img{
-    margin-right: 800px;
-    margin-left: 30px;
+nav{
+    display: block;
+    width: 30%;  
 }
 
-nav{
-    width: 40%;  
+.signup{
+    display: block;
+    width: 15%;
 }
 
 nav a{
-    padding: 37px;
+    padding: 10%;
     display: inline-block;
     border-top: 4px solid #ffffff;
     transition: border ease-in-out 200ms;  
 }
 
-nav a:hover{
+.signup a{
+    padding: 18% 10%;
+    border-top: 4px solid #ffffff;
+    transition: border ease-in-out 200ms;
+}
+
+nav a:hover, .signup a:hover{
     border-top: 4px solid #0065FC;
 }
 
-nav a:visited{
+nav a:visited, .signup a:visited{
     color: #0065FC ;
 }
 
 .heading{
     clear: both;
-    padding: 30px 30px 0px;
+    padding: 2% 2% 0;
 }
 
 .heading h2{
     margin-bottom: 1%;
+}
+
+.intro{
+    margin: 2% 0;
 }
 
 .search img{
@@ -155,6 +171,11 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.submit--mobile{
+    display: none;
 }
 
 .filter{
@@ -276,7 +297,7 @@ input[type="submit"]:hover{
 }
 
 
-.home-location .more{
+.more a{
     color:black;
     font-family: 'Raleway Bold';
     position: relative;
@@ -377,11 +398,21 @@ input[type="submit"]:hover{
 }
 
 .card-large{
-    height: 100%;
+    height: 96%;
 }
 
 .card-small{
-    height: 49%;
+    height: 45%;
+    margin-bottom: 10%;
+}
+
+.card-small--taller{
+    height: 55%;
+    margin-bottom: 10%;
+}
+
+.card-small--smaller{
+    height: 35%;
 }
 
 .card-large img{
@@ -393,7 +424,8 @@ input[type="submit"]:hover{
 
 .card-small img{
     width: 100%;
-    max-height: 80%;
+    height: max-content;
+    max-height: 85%;
     object-fit: cover;
 }
 
@@ -432,10 +464,384 @@ footer a{
 
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     /* Pour mobiles */
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header{
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+    }
+
+    .logo{
+        float: left;
+        display: block;
+        width: 50%;
+        margin: 0 0 0 8%;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+    
+    nav{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        margin: 5% 0 0;
+    }
+
+    nav a{
+        color: black;
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        border-top: none;
+        border-bottom: 4px solid #f2f2f2;
+        line-height: 40px;
+    }
+
+    nav a:hover{
+        color: #0065FC ;
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+    }
+
+    nav a:visited{
+        color: black;
+    }
+
+    .signup{
+        float: right;
+        position: absolute;
+        display: block;
+        right: 15%;
+        top: 3.5%;
+    }
+
+    .signup a{
+        padding: 0;
+        border:none;
+    }
+
+    .signup a:hover{
+        border:none;
+        filter: brightness(1.2);
+    }
+
+    .heading{
+        display: inline-block;
+        clear: both;
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro{
+        width: 90%;
+        align-content: center;
+        justify-content: center;
+        padding: 5% 5% 10% 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        margin: 2%;
+        padding: 3%;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .search img{
+        height: 18px;
+        padding:14px 10px 13px 15px;
+        background: #f2f2f2;
+        border: 2px #f2f2f2 solid;
+        border-radius: 12px 0px 0px 12px;
+    }
+    
+    .search input{
+        height: 50px;
+        border: 2px #f2f2f2 solid;
+    }
+    
+    .search input::placeholder{
+        font-family: 'Raleway Bold';
+        font-size: 16px;
+        color:black;
+        padding: 5%;
+    }
+
+    input[type="search"]{
+        width: 75%;
+    }
+
+    input[type="submit"]{
+        display: none;
+    }
+
+    .submit--mobile{
+        display: block;
+        background: #0065FC;
+        width: 18px;
+        padding: 0.2% 5%;
+        border-radius: 15px;
+        position: relative;
+        top: -2px;
+        left: -50px;
+    }
+        
+    .filter{
+        margin: 0;
+        padding: 1.5%;
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        clear: both;
+    }
+
+    .filter-title{
+        margin: 2% 0 2% 2%;
+        width: 100%;
+        font-family: 'Raleway Bold';
+    }
+
+    .filter-value{
+        margin: 1.5%;
+        padding: 0;
+    }
+
+    .infos{
+        clear: both;
+        margin: 2% 0;
+        padding: 5%;
+    }
+
+    .infos p{
+        font-size: 15px;
+    }
+
+    .home{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        float: none;
+        margin: 0 0 10% 0;
+    }
+
+    .popular{
+        margin: 0;
+        padding: 5% 0 10% 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .popular article{
+        margin: 2%;
+        padding: 1.5%;
+        width: 90%;
+    }
+
+    .popular-container{
+        width: 90%;
+    }
+
+    .popular article h3{
+        font-size: 18px;
+        margin-bottom: 3%;
+    }
+
+    .popular article p{
+        font-size: 14px;
+    }
+
+    .popular .rating{
+        margin-top: 17%;
+    }
+
+    .home-location{
+        margin: 5% 0;
+        height: auto;
+        width: 100%;
+        background-color: white;
+        float: none;
+    }
+
+    .home-title{
+        margin: 5% 0 5% 2%;
+    }
+
+    .home-location article{
+        margin: 3% 0;
+        width: 90%;
+        padding: 1.5%;
+    }
+
+    .more{
+        position: relative;
+        top: 20px;
+    }
+
+    .activity{
+        height: auto;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        width: 100%;
+        float: none;
+        overflow:hidden;
+    }
+
+    .activity-title{
+        margin: 0 0 0 5%;
+    }
+
+    .large, .small{
+        width:100%;
+        float: none;
+        height: 20%;
+    }
+
+    .card-large, .card-small{
+        width: 90%;
+        height: 200px;
+        margin: 7% 5%;
+    }
+
+    .card-large img, .card-small img{
+        max-height: 75%;
+    }
+
+    footer{
+        padding: 10% 5%;
+        height: 500px;
+        display: block;
+    }
+
+    footer article{
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1280px){
 
+    h3{
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+    
+    .logo{
+        display: block;
+        width: 45%;
+    }
+
+    .logo img{
+        width: 30%;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        text-align: center; 
+    }
+    
+    nav a{
+        font-size: none;
+        display: inline-block;
+    }
+
+    .signup{
+        margin: 0 1%;
+        text-align: center;
+        display: flex;
+        width: 15%;
+
+    }
+
+    .signup a{
+        padding: 23.5% 0;
+    }
+
+    .intro p{
+        font-size: medium;
+    }
+
+    .search{
+        width: 50%;
+        display: inline-block;
+        margin: 2% 0 2% 0;
+    }
+
+    .filter{
+        margin: 2% 0 2% 0;
+    }
+
+    .home-location article > img{
+        height: max-content;
+        max-height: 60%;
+    }
+
+    .home-container .rating{
+        width: 70%;
+    }
+
+    .home-container .rating img{
+        width: 15%;
+    }
+
+    .more{
+        display: inline;
+    }
+
+    .popular-container{
+        width: 95%;
+    }
+
+    .popular .rating{
+        margin: 30% 0 0 0;
+    }
+
+    .card-small img{
+        height: max-content;
+        max-height: 80%;
+    }
+    
 }

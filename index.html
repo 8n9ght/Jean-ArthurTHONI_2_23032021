@@ -9,23 +9,31 @@
 
     <body>
         <header>
-            <img src="images/logo/Reservia@3x.png" alt="logo de reservia">
-
+            <div class="logo">
+                <img src="images/logo/Reservia@3x.png" alt="logo de reservia">
+            </div>
             <nav>
                 <a href="#hébergements">Hébergements</a>
                 <a href="#activités">Activité</a>
-                <a href="#"><strong>S'inscrire</strong></a>
             </nav>
+
+            <div class="signup">
+                <a href="#"><strong>S'inscrire</strong></a>
+            </div>
         </header>
 
         <section class="heading">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre ville ou en pleine nature</p>
+            <div class="intro">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
             <div class="search">
                 <img src="images/pictos/map-marker-alt.svg" alt="Tapez le nom de la ville dans laquelle vous cherchez un hébergement">
                 <form action="action.php" method="POST">
                     <input type="search" name="search" id="search-location" placeholder="Marseille, France">
                     <input type="submit" value="Rechercher">
+                    <input type="image" src="images/pictos/search.svg" alt="Submit" class="submit--mobile">
                 </form>
             </div>
 
@@ -168,7 +176,9 @@
                     </article>
                 </a>
 
-                <a href="#" class="more">Afficher plus</a>
+                <div class="more">
+                    <a href="#" >Afficher plus</a>
+                </div>
             </div>
 
             <div class="popular">
@@ -250,7 +260,7 @@
 
             <div class="small">
                 <a href="#">
-                    <div class="card-small">
+                    <div class="card-small card-small--taller">
                         <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités à Marseille, Fort de Pomèues">
                         <section class="card-container">
                             <h3>Fort de Pomèues</h3>
@@ -259,7 +269,7 @@
                 </a>
                 
                 <a href="#">
-                    <div class="card-small">
+                    <div class="card-small card-small--smaller">
                         <img src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités à Marseille, Îles du Frioul">
                         <section class="card-container">
                             <h3>Îles du Frioul</h3>
