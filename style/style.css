@@ -248,10 +248,6 @@ input[type="submit"]:hover{
     object-fit: contain;
 }
 
-.popular-container .rating{
-    margin-top: 18% ;
-}
-
 .home{
     float: left;
     height: 686px;
@@ -345,7 +341,17 @@ input[type="submit"]:hover{
 }
 
 .popular-container{
-    width: 85%;
+    min-width: 90%;
+    height: 100%;
+}
+
+.popular-container .rating{
+    height: 90%;
+    display: flex;
+}
+
+.popular-container .rating > img{
+    align-items: flex-end;
 }
 
 .popular article img{
@@ -592,8 +598,8 @@ footer a{
     .search img{
         height: 18px;
         padding:14px 10px 13px 15px;
-        background: #f2f2f2;
-        border: 2px #f2f2f2 solid;
+        background: inherit;
+        border: inherit;
         border-radius: 12px 0px 0px 12px;
     }
     
@@ -611,7 +617,6 @@ footer a{
 
     input[type="search"]{
         width: 70%;
-        border-radius: none;
     }
 
     input[type="submit"]{
@@ -701,7 +706,6 @@ footer a{
     }
 
     .popular .rating{
-        margin-top: 17%;
     }
 
     .home-location{
@@ -801,7 +805,6 @@ footer a{
     }
     
     nav a{
-        font-size: none;
         display: inline-block;
     }
 
@@ -850,10 +853,6 @@ footer a{
 
     .popular-container{
         width: 95%;
-    }
-
-    .popular .rating{
-        margin: 30% 0 0 0;
     }
 
     .card-small img{
